@@ -1,5 +1,5 @@
 class InvitationMailer < ActionMailer::Base
-  default from: "gonzalo@evelo.com"
+  default from: "no-reply@evelo.com"
 
   def invitation_sent(invitation)
     @email = invitation.recipient_email

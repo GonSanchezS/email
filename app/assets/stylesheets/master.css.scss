@@ -1,2 +1,97 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$main-font: 'Merriweather Sans', sans-serif;
+
+.container {
+  margin-top: 6%;
+}
+
+
+// body {
+//  background: url(email.gif) white;
+// }
+
+.box {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.05em;
+  font-family: $main-font;
+  color: #131516;
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.375em;
+  font-family: $main-font;
+}
+
+.highlight {
+  border-bottom: 2px dotted #fa709a;
+}
+
+input { float: left; }
+
+form {
+  margin: auto;
+}
+
+form#new_invitation.simple_form.form-inline{
+  margin: auto;
+}
+
+div.input.email.required.invitation_recipient_email {
+  padding-right: 0px;
+}
+
+.form-control {
+  margin: auto;
+}
+
+input.form-control {
+  height: 65px;
+  border: 2px solid #fa709a;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 40px;
+  padding-left: 30px;
+  padding-top: 8px;
+}
+
+input.form-control::placeholder {
+  font-size: 18px;
+  color: #d5d5d5;
+}
+
+.btn {
+  padding: 10px 50px; 
+  height: 65px;
+  border-radius: 40px;
+  border: none;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%) !important;
+  color: #fff;
+  font-weight: 700;
+  font-family: $main-font;
+}
+
+.central-form {
+  margin:auto;
+  width: 70%;
+}
+
+.form-control {
+    margin-right: 5px;
+    width: 60% !important;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+  padding-right: 20px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}

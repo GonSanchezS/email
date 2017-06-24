@@ -5,8 +5,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
 </head>
 <body>
+
+<% if notice.present? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+
+    <% if alert.present? %>
+      <p class="alert alert-danger text-center"><%= alert %></p>
+<% end %>
 
 <%= yield %>
 

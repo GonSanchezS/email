@@ -1,7 +1,22 @@
-<h1>Invitations#new</h1>
-<p>Find me in app/views/invitations/new.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="box">
+    <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+    <h1>Have a boss (or colleague) who sends too many emails?</h1>
+    <p>Let them know they are a pain in the ass. <span class="highlight">Anonymously</span> 🙈</p>
 
-<%= simple_form_for @invitation do |f| %>
-  <%= f.input :recipient_email %>
-  <%= f.button :submit %>
-<% end %>
+    <br />
+
+
+    <%= simple_form_for @invitation, remote: true do |f| %>
+      <%= f.input :recipient_email, html: { class: "inlineFormInput" }, placeholder: "email@email.com", label: false %>
+      <%= f.button :submit, 'SEND', html: { class: "btn btn-primary send_email_btn" } %>
+    <% end %>
+    <br />
+    <p class="success_message" style="display:none;"></p>
+    </div>
+    
+    </div>
+  </div>
+</div>
+
