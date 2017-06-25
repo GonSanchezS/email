@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'normalize';
+@import 'mediaqueries';
 
 $main-font: 'Merriweather Sans', sans-serif;
 
@@ -48,7 +50,7 @@ div.input.email.required.invitation_recipient_email {
 }
 
 input.form-control {
-  width: 70% !important;
+  width: 70%;
   height: 65px;
   border: 2px solid #fa709a;
   box-shadow: none;
