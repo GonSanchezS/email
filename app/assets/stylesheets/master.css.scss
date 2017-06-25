@@ -79,6 +79,11 @@ input.form-control::placeholder {
   font-family: $main-font;
   float: right;
   margin-right: 2%;
+
+  &:hover {
+    background-image: linear-gradient(to right, #fee140 0%, #fee140 100%) !important;
+    color: white;
+  }
 }
 .addthis_inline_share_toolbox {
   margin-top: 30px;
