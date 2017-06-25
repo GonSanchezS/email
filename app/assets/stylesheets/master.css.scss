@@ -12,8 +12,8 @@ $main-font: 'Merriweather Sans', sans-serif;
 //  background: url(email.gif) white;
 // }
 
-.box {
-  background-color: white;
+.clear {
+  clear: both;
 }
 
 h1 {
@@ -30,31 +30,25 @@ p {
   font-size: 1.3em;
   line-height: 1.375em;
   font-family: $main-font;
+  margin-top: 1.275em;
 }
 
 .highlight {
   border-bottom: 2px dotted #fa709a;
 }
 
-input { float: left; }
+// Form
 
 form {
-  margin: auto;
-}
-
-form#new_invitation.simple_form.form-inline{
-  margin: auto;
+  margin-top: 40px;
 }
 
 div.input.email.required.invitation_recipient_email {
   padding-right: 0px;
 }
 
-.form-control {
-  margin: auto;
-}
-
 input.form-control {
+  width: 70% !important;
   height: 65px;
   border: 2px solid #fa709a;
   box-shadow: none;
@@ -62,6 +56,8 @@ input.form-control {
   border-radius: 40px;
   padding-left: 30px;
   padding-top: 8px;
+  float: left;
+  margin-left: 2%;
 }
 
 input.form-control::placeholder {
@@ -73,25 +69,20 @@ input.form-control::placeholder {
   padding: 10px 50px; 
   height: 65px;
   border-radius: 40px;
+  width: 25%;
   border: none;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%) !important;
   color: #fff;
   font-weight: 700;
   font-family: $main-font;
+  float: right;
+  margin-right: 2%;
+}
+.addthis_inline_share_toolbox {
+  margin-top: 30px;
 }
 
-.central-form {
-  margin:auto;
-  width: 70%;
-}
 
-.form-control {
-    margin-right: 5px;
-    width: 60% !important;
-}
 
-.simple_form div.input {
-  margin-bottom: 10px;
-  padding-right: 20px;
-  clear: both; /* Required for Webkit, but not for Gecko */
-}
+
+
