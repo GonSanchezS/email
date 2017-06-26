@@ -5,7 +5,7 @@
       <p>Let them know they <s>are a pain in the a**</s> should slow down a bit. <span class="highlight">Anonymously</span> 🙈</p>
         <br />
       <%= simple_form_for @invitation, remote: true do |f| %>
-        <%= f.input :recipient_email, html: { class: "inlineFormInput" }, placeholder: "colleague1@email.com, colleague2@email.com", label: false %>
+        <%= f.input :recipient_email, html: { class: "inlineFormInput" }, placeholder: "colleague1@email.com, colleague2@email.com", label: false, :autofocus => true %>
         <%= f.button :submit, 'SUBMIT ✉️', html: { class: "btn btn-primary send_email_btn" } %>
       <% end %>
 
