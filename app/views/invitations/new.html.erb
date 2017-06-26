@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-center">
       <h1>Have a colleague (or boss) who sends too many emails?</h1>
-      <p>Let them know they are a pain in the ass. <span class="highlight">Anonymously</span> 🙈</p>
+      <p>Let them know they <s>are a pain in the a**</s> should slow down a bit. <span class="highlight">Anonymously</span> 🙈</p>
         <br />
       <%= simple_form_for @invitation, remote: true do |f| %>
-        <%= f.input :recipient_email, html: { class: "inlineFormInput" }, placeholder: "colleague@email.com", label: false %>
-        <%= f.button :submit, 'SEND', html: { class: "btn btn-primary send_email_btn" } %>
+        <%= f.input :recipient_email, html: { class: "inlineFormInput" }, placeholder: "colleague1@email.com, colleague2@email.com", label: false %>
+        <%= f.button :submit, 'SUBMIT ✉️', html: { class: "btn btn-primary send_email_btn" } %>
       <% end %>
 
   <br class="clear"/>
